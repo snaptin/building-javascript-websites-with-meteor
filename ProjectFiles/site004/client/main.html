@@ -1,0 +1,24 @@
+<head>
+  <title>Social Lite</title>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Latest User Posts</h2>
+
+    <div class="userposts-container">
+      {{#each userposts}}
+        {{> userpost}}
+      {{/each}}
+    </div>
+  </div>
+</body>
+
+<template name="userpost">
+  <div class="panel-userpost">
+    <div class="userpost-info">
+      <strong>{{ username }}</strong> <small class="text-muted">{{ createdDate }}</small>
+      <p>{{ text }}</p>
+    </div>
+  </div>
+</template>

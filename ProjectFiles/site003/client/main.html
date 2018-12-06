@@ -1,0 +1,25 @@
+<head>
+  <title>Social Lite</title>
+</head>
+
+<body>
+  <div class="container">
+    <h2>Latest User Posts</h2>
+
+    <div class="userposts-container">
+      {{> userpost }}
+      {{> userpost }}
+      {{> userpost }}
+      {{> userpost }}
+    </div>
+  </div>
+</body>
+
+<template name="userpost">
+  <div class="panel-userpost">
+    <div class="userpost-info">
+      <strong>Craig</strong> <small class="text-muted">11/24/2018</small>
+      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, incidunt?</p>
+    </div>
+  </div>
+</template>

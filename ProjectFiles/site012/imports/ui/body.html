@@ -1,0 +1,16 @@
+<body>
+    <div class="container">
+        <h2>Latest User Posts</h2>
+
+        <form class="new-userpost">
+            <input type="text" placeholder="What's on your mind?" name="text" />
+        </form>
+
+        <div class="userposts-container">
+        {{#each userposts}}
+            {{> userpost}}
+        {{/each}}
+        </div>
+    </div>
+    {{> editmodal}}
+</body>
